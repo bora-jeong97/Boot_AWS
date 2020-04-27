@@ -30,6 +30,12 @@ buildscript {
     dependencies {
         compile('org.springframework.boot:spring-boot-starter-web')
 
+        compile('org.projectlombok:lombok')
+// jpa
+        compile('org.springframework.boot:spring-boot-starter-data-jpa') //jpa 추상화 라이브러리 버전관리포함
+
+        compile('com.h2database:h2')  //관계형 데이터베이스 메모리에 저장되어 재시작시 초기화 됨으로 테스트 용으로 사용됨
+// //jpa
         testCompile('org.springframework.boot:spring-boot-starter-test')
     }
 
